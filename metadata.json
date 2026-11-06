@@ -1,0 +1,6 @@
+{
+  "name": "LPR-Brand Vision",
+  "description": "Sistem CCTV Pengenalan Plat Nomor (LPR) & Deteksi Merek Kendaraan Bertenaga AI",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
