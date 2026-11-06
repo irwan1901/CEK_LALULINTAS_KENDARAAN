@@ -74,11 +74,11 @@ Struktur proyek sudah disiapkan untuk deployment langsung ke Vercel:
 2. Vercel akan otomatis mendeteksi framework: **Vite**.
    - **Build Command**: `npm run build`
    - **Output Directory**: `dist`
-   - **Install Command**: `npm install`
+   - **Install Command**: `npm install` (file `.npmrc` dengan `legacy-peer-deps=true` sudah disertakan untuk mencegah konflik dependensi versi esbuild/vite).
 3. Masuk ke tab **Environment Variables** di Vercel:
    - Tambahkan key: `GEMINI_API_KEY`
    - Masukkan nilai API key Gemini Anda dari Google AI Studio.
-4. Klik **Deploy**.
+4. Klik **Deploy** (atau **Redeploy** jika build sebelumnya gagal).
 
 ### 3. File `vercel.json` (Opsional jika ingin rewrite routing)
 Jika Anda membutuhkan rewrite SPA untuk client routing, file konfigurasi standar `vercel.json`:
